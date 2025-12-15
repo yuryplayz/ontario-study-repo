@@ -1,9 +1,10 @@
 import PageShell from "@/app/components/PageShell";
+import InteractiveTangentQuadratic from "@/app/components/InteractiveTangentQuadratic";
 
 export default function TangentLineNote() {
   return (
     <PageShell title="Tangent Line" subtitle="Use the derivative to find the slope at a point.">
-      <div className="space-y-6 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+      <div className="space-y-6">
         <p className="text-zinc-700">The slope of the tangent line to y = f(x) at x = a is f{"'"}(a).</p>
 
         <div className="space-y-2 rounded-xl border border-zinc-200 bg-zinc-50 p-4">
@@ -23,6 +24,8 @@ export default function TangentLineNote() {
           <p className="font-mono text-sm">Point: (3, 9)</p>
           <p className="font-mono text-sm">Tangent: y − 9 = 6(x − 3)</p>
         </div>
+
+        <InteractiveTangentQuadratic />
       </div>
     </PageShell>
   );
