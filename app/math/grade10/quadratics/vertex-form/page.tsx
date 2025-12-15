@@ -16,7 +16,9 @@ export default function Grade10QuadraticsVertexForm() {
         <ul>
           <li>Vertex: (h, k)</li>
           <li>Axis of symmetry: x = h</li>
-          <li>If a > 0 the parabola opens upward; if a < 0 it opens downward.</li>
+          <li>
+            If a {">"} 0 the parabola opens upward; if a {"<"} 0 it opens downward.
+          </li>
         </ul>
 
         <h4>Converting standard → vertex</h4>
