@@ -5,29 +5,13 @@ export default function Grade11FinancialMathUnit() {
   return (
     <PageShell
       title="Financial Math (MCF3M)"
-      subtitle="Money math topics that students search all the time."
+      subtitle="Interest, loans, budgeting, and real-world money problems."
     >
       <div className="grid gap-4 sm:grid-cols-2">
-        <CardLink
-          href="/math/grade11/financial-math/simple-interest"
-          title="Simple interest"
-          description="I = Prt and quick applications."
-        />
-        <CardLink
-          href="/math/grade11/financial-math/compound-interest"
-          title="Compound interest"
-          description="A = P(1 + r/n)^(nt) and growth."
-        />
-        <CardLink
-          href="/math/grade11/financial-math/loans-payments"
-          title="Loans & payments"
-          description="Monthly payments and amortization basics."
-        />
-        <CardLink
-          href="/math/grade11/financial-math/budgeting"
-          title="Budgeting"
-          description="Income vs expenses, saving goals, and planning."
-        />
+        <CardLink href="/math/grade11/financial-math/simple-interest" title="Simple interest" description="A = P(1 + rt)" />
+        <CardLink href="/math/grade11/financial-math/compound-interest" title="Compound interest" description="A = P(1 + r/n)^{n t}" />
+        <CardLink href="/math/grade11/financial-math/loans-payments" title="Loans & payments" description="Amortization basics and payment formulas." />
+        <CardLink href="/math/grade11/financial-math/budgeting" title="Budgeting" description="Practical budgeting & planning tips." />
       </div>
     </PageShell>
   );

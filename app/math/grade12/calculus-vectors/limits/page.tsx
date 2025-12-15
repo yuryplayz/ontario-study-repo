@@ -8,11 +8,7 @@ export default function LimitsUnit() {
       subtitle="Starter notes for MCV4U limits."
     >
       <div className="grid gap-4 sm:grid-cols-2">
-        <CardLink
-          href="/math/grade12/calculus-vectors/limits/basic-limits"
-          title="Basic limits"
-          description="Substitution, factoring, and simplifying."
-        />
+        <CardLink href="/math/grade12/calculus-vectors/limits/basic-limits" title="Basic limits" description="Substitution, factoring, and simplifying." />
       </div>
     </PageShell>
   );
