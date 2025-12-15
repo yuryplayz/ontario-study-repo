@@ -5,7 +5,8 @@ export default function Grade11MathPage() {
   return (
     <PageShell
       title="Grade 11 Math (MCR3U / MCF3M)"
-      subtitle="Functions, trigonometry, sequences/series, and problem solving."
+      subtitle="Units and topics for Grade 11 math."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

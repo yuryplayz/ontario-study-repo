@@ -6,6 +6,7 @@ export default function Grade10TrigPage() {
     <PageShell
       title="Trigonometry"
       subtitle="SOHCAHTOA, angles of elevation/depression, and real-world problems."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

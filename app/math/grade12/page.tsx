@@ -5,7 +5,8 @@ export default function Grade12MathPage() {
   return (
     <PageShell
       title="Grade 12 Math (MHF4U / MCV4U)"
-      subtitle="Advanced Functions, Calculus, and Vectors — organized by units + notes."
+      subtitle="Advanced Functions and Calculus & Vectors."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

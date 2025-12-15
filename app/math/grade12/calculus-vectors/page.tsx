@@ -6,6 +6,7 @@ export default function CalcVectorsHub() {
     <PageShell
       title="Calculus & Vectors (MCV4U)"
       subtitle="Limits, derivatives, applications, and vectors."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

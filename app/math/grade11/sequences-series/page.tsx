@@ -5,7 +5,8 @@ export default function Grade11SeqSeriesUnit() {
   return (
     <PageShell
       title="Sequences & Series"
-      subtitle="Arithmetic and geometric sequences with formulas and applications."
+      subtitle="Arithmetic and geometric sequences, series, and applications."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

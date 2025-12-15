@@ -5,7 +5,8 @@ export default function Grade10MeasGeoPage() {
   return (
     <PageShell
       title="Measurement & Geometry"
-      subtitle="Formulas and problem-solving for area, surface area, volume, and geometry applications."
+      subtitle="Area, surface area, volume, and problem solving."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink href="/math/grade10/measurement-geometry/area-perimeter" title="Area & perimeter" description="Common formulas & examples." />

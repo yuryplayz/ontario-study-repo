@@ -6,6 +6,7 @@ export default function Grade11FunctionsUnit() {
     <PageShell
       title="Functions"
       subtitle="Core Grade 11 skills for working with functions."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

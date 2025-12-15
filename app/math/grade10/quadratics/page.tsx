@@ -6,6 +6,7 @@ export default function Grade10QuadraticsPage() {
     <PageShell
       title="Quadratic Functions"
       subtitle="Grade 10 quadratics: core skills + practice."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink href="/math/grade10/quadratics/factoring" title="Factoring quadratics" description="Turn x^2 + bx + c into factors." />

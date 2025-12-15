@@ -5,7 +5,8 @@ export default function Grade11TrigUnit() {
   return (
     <PageShell
       title="Trigonometry"
-      subtitle="Exact values, unit circle basics, and solving common trig questions."
+      subtitle="Angles, exact values, the unit circle, and trig equations."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

@@ -5,7 +5,8 @@ export default function DerivativesUnit() {
   return (
     <PageShell
       title="Derivatives"
-      subtitle="Derivative rules and basic differentiation."
+      subtitle="Derivative rules, tangent lines, and rates of change."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

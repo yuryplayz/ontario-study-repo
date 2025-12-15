@@ -5,7 +5,8 @@ export default function VectorsUnit() {
   return (
     <PageShell
       title="Vectors"
-      subtitle="Vector basics, components, and geometry."
+      subtitle="Vector representations, operations, and dot product basics."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

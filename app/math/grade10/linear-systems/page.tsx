@@ -6,6 +6,7 @@ export default function Grade10LinearSystemsPage() {
     <PageShell
       title="Linear Systems"
       subtitle="Solve systems with graphing, substitution, and elimination."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

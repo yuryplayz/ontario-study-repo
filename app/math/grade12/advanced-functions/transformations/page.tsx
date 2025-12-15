@@ -6,6 +6,7 @@ export default function AFTransformationsUnit() {
     <PageShell
       title="Transformations & Function Features"
       subtitle="How transformations affect graphs: stretches, reflections, translations, and function characteristics."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink href="/math/grade12/advanced-functions/transformations/transformations-rules" title="Transformation rules" description="Order of operations, notation, and common examples." />

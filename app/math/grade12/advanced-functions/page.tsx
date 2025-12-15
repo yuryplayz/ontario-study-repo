@@ -5,7 +5,8 @@ export default function AdvancedFunctionsHub() {
   return (
     <PageShell
       title="Advanced Functions (MHF4U)"
-      subtitle="Units and notes for Grade 12 Advanced Functions."
+      subtitle="Functions and modelling topics for Grade 12 university preparation."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink

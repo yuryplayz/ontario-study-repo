@@ -5,7 +5,8 @@ export default function LimitsUnit() {
   return (
     <PageShell
       title="Limits"
-      subtitle="Starter notes for MCV4U limits."
+      subtitle="Learn how limits describe behaviour near a point."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink href="/math/grade12/calculus-vectors/limits/basic-limits" title="Basic limits" description="Substitution, factoring, and simplifying." />

@@ -5,7 +5,8 @@ export default function Grade11FinancialMathUnit() {
   return (
     <PageShell
       title="Financial Math (MCF3M)"
-      subtitle="Interest, loans, budgeting, and real-world money problems."
+      subtitle="Interest, loans, and practical budgeting."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink href="/math/grade11/financial-math/simple-interest" title="Simple interest" description="A = P(1 + rt)" />

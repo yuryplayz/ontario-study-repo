@@ -5,7 +5,8 @@ export default function AFPolynomialUnit() {
   return (
     <PageShell
       title="Polynomial Functions"
-      subtitle="Zeros, factoring, and graph behaviour."
+      subtitle="Zeros, multiplicity, end behaviour, and factoring insights."
+      variant="unit"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <CardLink
