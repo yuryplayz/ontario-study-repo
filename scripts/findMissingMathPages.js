@@ -1,7 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+/* eslint-disable @typescript-eslint/no-require-imports */
 
-const root = path.join(__dirname, '..', 'app');
+const fs = require("fs");
+const path = require("path");
+
+const root = path.join(__dirname, "..", "app");
 
 function walk(dir) {
   let results = [];
@@ -10,7 +12,7 @@ function walk(dir) {
     const full = path.join(dir, d.name);
     if (d.isDirectory()) {
       results = results.concat(walk(full));
-    } else if (d.isFile() && full.endsWith('.tsx')) {
+    } else if (d.isFile() && full.endsWith(".tsx")) {
       results.push(full);
     }
   }
@@ -21,7 +23,7 @@ const files = walk(root);
 const hrefRegex = /href=\{?"(\/math\/[^"}]+)"\}?/g;
 const refs = new Set();
 for (const f of files) {
-  const content = fs.readFileSync(f, 'utf8');
+  const content = fs.readFileSync(f, "utf8");
   let m;
   while ((m = hrefRegex.exec(content))) {
     refs.add(m[1]);
@@ -33,7 +35,7 @@ const existing = [];
 const missing = [];
 for (const ref of referenced) {
   // map /math/grade10 -> app/math/grade10/page.tsx
-  const candidate = path.join(root, ref.replace(/^\//, ''), 'page.tsx');
+  const candidate = path.join(root, ref.replace(/^\//, ""), "page.tsx");
   if (fs.existsSync(candidate)) existing.push(ref);
   else missing.push({ path: ref, expected: candidate });
 }

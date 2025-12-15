@@ -26,10 +26,11 @@ export default function Grade10LinearSystemsPage() {
           description="Add/subtract equations to eliminate a variable."
         />
 
-        <a href="/math/grade10/linear-systems/word-problems" className="rounded-xl border p-6 hover:shadow-md transition">
-          <h2 className="text-xl font-semibold">Word problems</h2>
-          <p className="text-gray-600">Translate real situations into systems and solve.</p>
-        </a>
+        <CardLink
+          href="/math/grade10/linear-systems/word-problems"
+          title="Word problems"
+          description="Translate real situations into systems and solve."
+        />
       </div>
     </PageShell>
   );

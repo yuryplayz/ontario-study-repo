@@ -26,13 +26,11 @@ export default function Grade10QuadraticsVertexForm() {
 
         <h4>Example</h4>
         <p>Write y = x² − 4x + 1 in vertex form.</p>
-        <pre>
-// complete the square
+        <pre>{`// complete the square
 y = x² − 4x + 1
   = (x² − 4x + 4) + 1 − 4
   = (x − 2)² − 3
-// vertex at (2, −3)
-        </pre>
+// vertex at (2, −3)`}</pre>
 
         <h4>Practice</h4>
         <ul>
