@@ -3,43 +3,23 @@ import PageShell from "@/app/components/PageShell";
 export default function GeometricSequencesNote() {
   return (
     <PageShell
-      title="Geometric Sequences"
-      subtitle="Sequences with a constant ratio between terms."
+      title="Geometric sequences"
+      subtitle="Common ratio, nth term, and sum formulas."
     >
-      <div className="rounded-2xl border bg-white p-6 shadow-sm space-y-6">
-        <section>
-          <h2 className="text-xl font-semibold mb-2">What is a geometric sequence?</h2>
-          <p className="text-zinc-700">
-            A geometric sequence is a sequence where each term is multiplied by
-            the same value (the common ratio).
-          </p>
-        </section>
+      <div className="prose max-w-none">
+        <h3>Formulas</h3>
+        <ul>
+          <li>nth term: a_n = a_1 · r^(n−1)</li>
+          <li>sum (n terms): S_n = a_1 (1 − r^n)/(1 − r) (r ≠ 1)</li>
+        </ul>
 
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Key formula</h2>
-          <div className="rounded-xl bg-zinc-50 border p-4 space-y-2">
-            <p className="font-mono text-sm">aₙ = a₁ · rⁿ⁻¹</p>
-            <p className="text-zinc-700">where r is the common ratio.</p>
-          </div>
-        </section>
+        <h4>Example</h4>
+        <p>a_1 = 4, r = 3 → a_5 = 4 · 3^4 = 324.</p>
 
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Example</h2>
-          <div className="rounded-xl bg-zinc-50 border p-4 space-y-2">
-            <p className="font-mono text-sm">3, 6, 12, 24, …</p>
-            <p className="text-zinc-700">Here, r = 2</p>
-            <p className="font-mono text-sm">aₙ = 3 · 2ⁿ⁻¹</p>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Growth vs decay</h2>
-          <ul className="list-disc ml-6 text-zinc-700 space-y-1">
-            <li>r &gt; 1 → growth</li>
-            <li>0 &lt; r &lt; 1 → decay</li>
-            <li>r &lt; 0 → alternating signs</li>
-          </ul>
-        </section>
+        <h4>Practice</h4>
+        <ul>
+          <li>Find sum of first 6 terms for a_1 = 2 and r = 1/2.</li>
+        </ul>
       </div>
     </PageShell>
   );

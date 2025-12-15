@@ -5,19 +5,11 @@ export default function AFTransformationsUnit() {
   return (
     <PageShell
       title="Transformations & Function Features"
-      subtitle="Core skills: reading graphs and describing transformations."
+      subtitle="How transformations affect graphs: stretches, reflections, translations, and function characteristics."
     >
       <div className="grid gap-4 sm:grid-cols-2">
-        <CardLink
-          href="/math/grade12/advanced-functions/transformations/transformations-rules"
-          title="Transformation rules"
-          description="g(x) = a f(b(x−h)) + k and what each part does."
-        />
-        <CardLink
-          href="/math/grade12/advanced-functions/transformations/domain-range"
-          title="Domain and range"
-          description="Restrictions and interval notation."
-        />
+        <CardLink href="/math/grade12/advanced-functions/transformations/transformations-rules" title="Transformation rules" description="Order of operations, notation, and common examples." />
+        <CardLink href="/math/grade12/advanced-functions/transformations/domain-range" title="Domain and range" description="How transformations change domain/range and restrictions." />
       </div>
     </PageShell>
   );

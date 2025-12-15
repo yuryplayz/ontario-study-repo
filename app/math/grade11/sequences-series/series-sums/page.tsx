@@ -3,38 +3,20 @@ import PageShell from "@/app/components/PageShell";
 export default function SeriesSumsNote() {
   return (
     <PageShell
-      title="Series and Sums"
-      subtitle="Finding the sum of terms in a sequence."
+      title="Series & sums"
+      subtitle="Use sequence formulas and tests for sums and series."
     >
-      <div className="rounded-2xl border bg-white p-6 shadow-sm space-y-6">
-        <section>
-          <h2 className="text-xl font-semibold mb-2">What is a series?</h2>
-          <p className="text-zinc-700">
-            A series is the sum of the terms of a sequence.
-          </p>
-        </section>
+      <div className="prose max-w-none">
+        <h3>Arithmetic series</h3>
+        <p>Use S_n = n/2 (a_1 + a_n) or S_n = n/2 (2a_1 + (n − 1)d).</p>
 
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Arithmetic series formula</h2>
-          <div className="rounded-xl bg-zinc-50 border p-4 space-y-2">
-            <p className="font-mono text-sm">Sₙ = n/2 (2a₁ + (n − 1)d)</p>
-          </div>
-        </section>
+        <h3>Geometric series</h3>
+        <p>Use S_n = a_1 (1 − r^n)/(1 − r) for r ≠ 1. Infinite sum exists when |r| < 1: S_∞ = a_1/(1 − r).</p>
 
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Geometric series formula</h2>
-          <div className="rounded-xl bg-zinc-50 border p-4 space-y-2">
-            <p className="font-mono text-sm">Sₙ = a₁(1 − rⁿ) / (1 − r), r ≠ 1</p>
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Common mistakes</h2>
-          <ul className="list-disc ml-6 text-zinc-700 space-y-1">
-            <li>Using sequence formulas instead of sum formulas</li>
-            <li>Forgetting brackets in formulas</li>
-          </ul>
-        </section>
+        <h4>Practice</h4>
+        <ul>
+          <li>Find sum of geometric series 3 + 6 + 12 + ... up to 5 terms.</li>
+        </ul>
       </div>
     </PageShell>
   );

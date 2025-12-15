@@ -3,28 +3,23 @@ import PageShell from "@/app/components/PageShell";
 export default function AFTransformRulesNote() {
   return (
     <PageShell
-      title="Transformation Rules (MHF4U)"
-      subtitle="How to quickly describe stretches, reflections, and shifts."
+      title="Transformation rules"
+      subtitle="Practical rules: order, signs, and combining transformations."
     >
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm space-y-6">
-        <div className="rounded-xl bg-zinc-50 border border-zinc-200 p-4">
-          <p className="font-mono text-sm">g(x) = a · f( b(x − h) ) + k</p>
-        </div>
+      <div className="prose max-w-none">
+        <h3>Order of operations</h3>
+        <p>Apply horizontal transformations (inside f(bx + h)) before vertical ones, and handle reflections/stretches carefully.</p>
 
-        <ul className="space-y-2 text-zinc-700">
-          <li>• <span className="font-semibold">a</span>: vertical stretch/compression; if a &lt; 0 reflect in x-axis</li>
-          <li>• <span className="font-semibold">b</span>: horizontal stretch/compression; if b &lt; 0 reflect in y-axis</li>
-          <li>• <span className="font-semibold">h</span>: shift right h (left if (x + h))</li>
-          <li>• <span className="font-semibold">k</span>: shift up k (down if negative)</li>
+        <h4>Common patterns</h4>
+        <ul>
+          <li>y = f(x − h) shifts right by h.</li>
+          <li>y = f(x) + k shifts up by k.</li>
+          <li>y = a·f(x) stretches vertically by factor a.</li>
+          <li>y = f(bx) stretches/compresses horizontally by factor 1/b.</li>
         </ul>
 
-        <div className="rounded-xl bg-zinc-50 border border-zinc-200 p-4 space-y-2">
-          <p className="font-mono text-sm">Example: g(x) = -3 f(2(x − 1)) + 4</p>
-          <p className="text-zinc-700">
-            Vertical stretch by 3 + reflect in x-axis, horizontal compression by 2,
-            shift right 1, shift up 4.
-          </p>
-        </div>
+        <h4>Example</h4>
+        <p>Describe y = −2 f(3(x + 1)) − 4: reflect over x-axis, vertical stretch by 2, horizontal compress by 3, shift left 1, down 4.</p>
       </div>
     </PageShell>
   );
