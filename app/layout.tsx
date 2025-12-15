@@ -4,6 +4,7 @@ import "./globals.css";
 
 import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
+import ClientOnly from "./components/ClientOnly";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,13 +33,13 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 text-zinc-900`}
       >
-        <SiteHeader />
+        <ClientOnly>
+          <SiteHeader />
 
-        <div className="min-h-screen">
-          {children}
-        </div>
+          <div className="min-h-screen">{children}</div>
 
-        <SiteFooter />
+          <SiteFooter />
+        </ClientOnly>
       </body>
     </html>
   );
