@@ -77,4 +77,10 @@ export const SEARCH_INDEX: SearchItem[] = [
   { title: "Vectors Unit", href: "/math/grade12/calculus-vectors/vectors", tags: ["vectors"] },
   { title: "Vector Basics", href: "/math/grade12/calculus-vectors/vectors/basics", tags: ["components"] },
   { title: "Dot Product Intro", href: "/math/grade12/calculus-vectors/vectors/dot-product-intro", tags: ["dot product"] },
+
+  // Science (starter)
+  { title: "Science", href: "/science", tags: ["science"] },
+  { title: "Grade 10 Science", href: "/science/grade10", tags: ["grade 10", "science"] },
+  { title: "Grade 11 Science", href: "/science/grade11", tags: ["grade 11", "science"] },
+  { title: "Grade 12 Science", href: "/science/grade12", tags: ["grade 12", "science"] },
 ];
