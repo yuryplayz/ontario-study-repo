@@ -918,7 +918,7 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
     strands: {
       biology: {
         title: "Grade 11 Biology",
-        subtitle: "Biodiversity, evolution, genetics, plants, and animals.",
+        subtitle: "Biodiversity and evolution (expanded notes, practice, and labs).",
         units: {
           biodiversity: {
             title: "Biodiversity",
@@ -927,17 +927,160 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
               classification: {
                 title: "Classification basics",
                 subtitle: "Domains, kingdoms, and naming organisms.",
+                notes: [
+                  "Classification (taxonomy) helps scientists organize biodiversity and communicate clearly.",
+                  "Binomial nomenclature uses two names: Genus species (e.g., Homo sapiens).",
+                  "A species is typically a group that can interbreed and produce fertile offspring.",
+                  "Classifications can change when new evidence appears (especially DNA evidence).",
+                ],
+                vocabulary: ["taxonomy", "species", "genus", "binomial nomenclature", "classification key"],
+                practice: [
+                  {
+                    question: "What is binomial nomenclature? Give one example.",
+                    answer: "A two-part scientific name: Genus species (e.g., Canis lupus).",
+                  },
+                  {
+                    question: "Why is using common names sometimes confusing?",
+                    answer:
+                      "Common names vary by language/region; one name can refer to different organisms or one organism can have many names.",
+                  },
+                  {
+                    question: "How can DNA evidence change classifications?",
+                    answer:
+                      "DNA comparisons can reveal evolutionary relationships that are not obvious from appearance, leading to re-grouping.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Lab: dichotomous key challenge",
+                    purpose: "Build and use a dichotomous key to classify unknown items.",
+                    materials: ["10–15 small objects or organism pictures", "Paper", "Pencil"],
+                    safety: ["No special safety requirements."],
+                    procedure: [
+                      "Choose a set of objects (or pictures).",
+                      "List observable traits (shape, colour, number of parts, texture).",
+                      "Create paired statements (either/or) that split the group until each item is uniquely identified.",
+                      "Swap keys with another group and test if they can identify items correctly.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "What makes a good dichotomous key question?",
+                        answer:
+                          "It uses clear, observable traits and splits the group into two non-overlapping choices.",
+                      },
+                      {
+                        question: "What trait caused the most confusion? How could you improve it?",
+                        answer:
+                          "Answers vary; improvement usually means making the trait more objective or adding a measurement.",
+                      },
+                    ],
+                  },
+                ],
               },
+
               ecosystems: {
                 title: "Ecosystems & interactions",
                 subtitle: "Populations, communities, and energy flow.",
+                notes: [
+                  "An ecosystem includes living (biotic) and non-living (abiotic) factors interacting.",
+                  "Energy flows through trophic levels (producers → consumers → decomposers); matter cycles.",
+                  "Food webs show multiple feeding relationships and are more realistic than food chains.",
+                  "Population size depends on limiting factors (food, space, disease, predators).",
+                ],
+                vocabulary: ["ecosystem", "biotic", "abiotic", "trophic level", "food web", "limiting factor"],
+                practice: [
+                  {
+                    question: "Why are food webs more realistic than food chains?",
+                    answer: "Most organisms have multiple food sources and predators, so relationships form a web.",
+                  },
+                  {
+                    question: "Give one example of a biotic and one abiotic factor.",
+                    answer: "Biotic: predators; Abiotic: temperature (many correct answers).",
+                  },
+                  {
+                    question: "What happens to available energy as you move up trophic levels?",
+                    answer: "It decreases; much energy is lost as heat and used for life processes.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Field study: quadrat sampling (biodiversity estimate)",
+                    purpose: "Estimate plant diversity in two locations using sampling.",
+                    materials: ["String/rope to make a 1 m² quadrat", "Measuring tape", "Notebook", "Camera (optional)"],
+                    safety: ["Dress for weather.", "Watch for allergens/bugs.", "Stay on school-approved areas."],
+                    procedure: [
+                      "Choose two locations (e.g., shaded vs sunny area).",
+                      "Place the quadrat randomly 5–10 times in each location.",
+                      "Record number of different plant species and/or individuals in each quadrat.",
+                      "Compare average diversity between locations.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "Why do we use random sampling?",
+                        answer: "To reduce bias and make the sample more representative of the area.",
+                      },
+                      {
+                        question: "What abiotic factors might explain differences between locations?",
+                        answer: "Light, moisture, temperature, soil type, wind exposure, etc.",
+                      },
+                    ],
+                  },
+                ],
               },
+
               conservation: {
                 title: "Conservation & sustainability",
                 subtitle: "Human impacts and ecosystem protection.",
+                notes: [
+                  "Biodiversity supports ecosystem stability and provides resources (food, medicine, services like pollination).",
+                  "Major threats include habitat loss, invasive species, pollution, overharvesting, and climate change.",
+                  "Sustainability means meeting needs now without preventing future generations from meeting their needs.",
+                  "Conservation strategies include protected areas, habitat restoration, sustainable harvesting, and reducing pollution.",
+                ],
+                vocabulary: ["biodiversity", "habitat fragmentation", "invasive species", "sustainability", "conservation"],
+                practice: [
+                  {
+                    question: "Name three major threats to biodiversity.",
+                    answer: "Habitat loss, invasive species, pollution (also overharvesting, climate change).",
+                  },
+                  {
+                    question: "What is an invasive species and why can it be harmful?",
+                    answer:
+                      "A non-native species that spreads quickly and can outcompete native species, disrupting ecosystems.",
+                  },
+                  {
+                    question: "Give one example of an ecosystem service.",
+                    answer: "Pollination, water purification, soil formation, carbon storage, etc.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Case study project: local species at risk",
+                    purpose: "Research a species at risk in Ontario and propose a conservation plan.",
+                    materials: ["Internet/library sources", "Notebook"],
+                    safety: ["No special safety requirements."],
+                    procedure: [
+                      "Choose a species at risk (e.g., monarch butterfly, Blanding’s turtle).",
+                      "Identify habitat needs, threats, and current conservation efforts.",
+                      "Propose 2–3 realistic actions (policy, habitat restoration, public education).",
+                      "Present your plan with evidence.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "Which threat is most significant for your chosen species and why?",
+                        answer: "Answers vary; should be supported by evidence from sources.",
+                      },
+                      {
+                        question: "How would you measure whether your plan worked?",
+                        answer: "Population trends, habitat quality measures, reduced mortality, increased nesting success, etc.",
+                      },
+                    ],
+                  },
+                ],
               },
             },
           },
+
           evolution: {
             title: "Evolution",
             subtitle: "How populations change over time.",
@@ -945,14 +1088,108 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
               naturalSelection: {
                 title: "Natural selection",
                 subtitle: "Variation, selection pressures, and adaptation.",
+                notes: [
+                  "Natural selection requires: variation, heritability, and differential survival/reproduction.",
+                  "Selection acts on phenotypes, but changes allele frequencies in a population over time.",
+                  "Adaptations increase fitness (reproductive success) in a specific environment.",
+                  "Selection pressures include predators, disease, competition, and climate.",
+                ],
+                vocabulary: ["natural selection", "adaptation", "fitness", "selection pressure", "allele frequency"],
+                practice: [
+                  {
+                    question: "Why is variation necessary for natural selection?",
+                    answer:
+                      "If all individuals are identical, no traits provide an advantage; selection can’t favour one trait over another.",
+                  },
+                  {
+                    question: "What does it mean that selection acts on populations, not individuals?",
+                    answer:
+                      "Individuals don’t evolve genetically during their lifetime; population trait frequencies change across generations.",
+                  },
+                  {
+                    question: "Give an example of a selection pressure and a possible adaptation.",
+                    answer: "Predators → camouflage; drought → deeper roots; many valid answers.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Simulation: ‘beak’ adaptation and food sources",
+                    purpose: "Model how different traits can be favoured in different environments.",
+                    materials: ["Tweezers, spoon, clothespin (beaks)", "Mixed ‘food’: beans, rice, paper clips", "Timer"],
+                    safety: ["Be careful with sharp objects; keep materials off the floor."],
+                    procedure: [
+                      "Assign each student/group a ‘beak’ tool.",
+                      "Scatter ‘food’ items on a table (environment).",
+                      "Collect as many items as possible in 30 seconds.",
+                      "Repeat with a different food mix (environment change).",
+                      "Compare which beak type had the highest ‘fitness’ in each environment.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "Which beak was most successful in each environment and why?",
+                        answer:
+                          "Depends on food type; tools better matched to the food shape/size collect more efficiently.",
+                      },
+                      {
+                        question: "How does this model relate to real evolution?",
+                        answer:
+                          "Traits that help organisms access resources lead to higher reproductive success, so those traits become more common.",
+                      },
+                    ],
+                  },
+                ],
               },
+
               evidence: {
                 title: "Evidence for evolution",
                 subtitle: "Fossils, anatomy, and DNA.",
+                notes: [
+                  "Fossils show changes over time and transitional forms.",
+                  "Comparative anatomy: homologous structures suggest common ancestry; analogous structures suggest similar function but not close ancestry.",
+                  "Embryology can show early developmental similarities.",
+                  "DNA/protein comparisons provide molecular evidence for relatedness.",
+                ],
+                vocabulary: ["fossil record", "transitional fossil", "homologous", "analogous", "common ancestry"],
+                practice: [
+                  {
+                    question: "What is a homologous structure?",
+                    answer:
+                      "A structure with similar underlying anatomy due to common ancestry (e.g., human arm and whale flipper).",
+                  },
+                  {
+                    question: "How can DNA evidence support evolution?",
+                    answer:
+                      "More similar DNA sequences indicate closer evolutionary relationships and common ancestry.",
+                  },
+                  {
+                    question: "Why is the fossil record incomplete?",
+                    answer:
+                      "Fossilization is rare; many organisms don’t fossilize, and fossils can be destroyed by erosion/geology.",
+                  },
+                ],
               },
+
               speciation: {
                 title: "Speciation",
                 subtitle: "How new species form.",
+                notes: [
+                  "Speciation occurs when populations become reproductively isolated and diverge genetically.",
+                  "Isolation can be geographic (physical separation) or reproductive (timing, behaviour, incompatible mating).",
+                  "Over time, mutations and selection can lead to differences that prevent interbreeding.",
+                ],
+                vocabulary: ["speciation", "reproductive isolation", "gene pool", "geographic isolation"],
+                practice: [
+                  {
+                    question: "Give one example of a reproductive isolating mechanism.",
+                    answer:
+                      "Temporal isolation (different mating seasons), behavioural isolation (different mating calls), mechanical isolation, etc.",
+                  },
+                  {
+                    question: "How can geographic isolation lead to speciation?",
+                    answer:
+                      "Separated populations experience different environments and mutations; without gene flow they diverge until they can’t interbreed.",
+                  },
+                ],
               },
             },
           },
@@ -961,7 +1198,7 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
 
       chemistry: {
         title: "Grade 11 Chemistry",
-        subtitle: "Bonding, reactions, solutions, and gases.",
+        subtitle: "Bonding and solutions (expanded notes, practice, and labs).",
         units: {
           bonding: {
             title: "Chemical bonding",
@@ -970,17 +1207,94 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
               ionic: {
                 title: "Ionic bonding",
                 subtitle: "Electron transfer and ionic compounds.",
+                notes: [
+                  "Ionic bonds form when electrons transfer from a metal to a non-metal, creating ions.",
+                  "Opposite charges attract; ionic compounds form crystal lattices.",
+                  "Ionic compounds often have high melting points and can conduct electricity when dissolved or molten.",
+                ],
+                vocabulary: ["ion", "cation", "anion", "ionic bond", "lattice"],
+                practice: [
+                  {
+                    question: "Why do ionic compounds form crystals?",
+                    answer:
+                      "Ions arrange into a repeating lattice to maximize attractions and minimize repulsions.",
+                  },
+                  {
+                    question: "Explain why solid NaCl doesn’t conduct electricity but saltwater does.",
+                    answer:
+                      "In a solid, ions are fixed in place. In solution, ions move and carry charge.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Lab: conductivity of solutions",
+                    purpose: "Test which solutions conduct electricity and relate to ions.",
+                    materials: ["Conductivity tester (or circuit)", "Distilled water", "Salt", "Sugar", "Cups"],
+                    safety: ["Keep electronics away from spills.", "Do not ingest lab solutions."],
+                    procedure: [
+                      "Test conductivity of distilled water.",
+                      "Dissolve salt in water and test.",
+                      "Dissolve sugar in water and test.",
+                      "Compare results and explain using particle models.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "Which solutions conducted and why?",
+                        answer:
+                          "Saltwater conducts because it contains ions; sugar water doesn’t because sugar dissolves as neutral molecules.",
+                      },
+                    ],
+                  },
+                ],
               },
+
               covalent: {
                 title: "Covalent bonding",
                 subtitle: "Sharing electrons and molecule structure.",
+                notes: [
+                  "Covalent bonds form when non-metals share electrons to fill valence shells.",
+                  "Bonds can be polar or nonpolar depending on electronegativity differences.",
+                  "Molecular substances often have lower melting points than ionic substances.",
+                ],
+                vocabulary: ["covalent bond", "molecule", "electronegativity", "polar"],
+                practice: [
+                  {
+                    question: "What makes a covalent bond polar?",
+                    answer:
+                      "Unequal sharing of electrons due to different electronegativities, creating partial charges.",
+                  },
+                  {
+                    question: "Why do many molecular substances have low melting points?",
+                    answer:
+                      "Intermolecular forces between molecules are weaker than ionic lattice forces.",
+                  },
+                ],
               },
+
               lewis: {
                 title: "Lewis structures",
                 subtitle: "Drawing molecules and ions.",
+                notes: [
+                  "Lewis structures show valence electrons and bonding pairs.",
+                  "Steps: count valence electrons, arrange atoms, form bonds, complete octets, check remaining electrons.",
+                  "Some molecules have multiple valid resonance forms.",
+                ],
+                vocabulary: ["valence electrons", "Lewis structure", "octet", "resonance"],
+                practice: [
+                  {
+                    question: "Draw a Lewis structure for CO₂.",
+                    answer:
+                      "O=C=O with two double bonds; each O has two lone pairs; carbon has no lone pairs.",
+                  },
+                  {
+                    question: "How many valence electrons are in H₂O?",
+                    answer: "8 total (O has 6, each H has 1).",
+                  },
+                ],
               },
             },
           },
+
           solutions: {
             title: "Solutions & solubility",
             subtitle: "Concentration and solubility.",
@@ -988,14 +1302,86 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
               concentration: {
                 title: "Concentration",
                 subtitle: "g/L, mol/L and dilution.",
+                notes: [
+                  "Concentration describes how much solute is dissolved in a given amount of solution.",
+                  "Common units: g/L (mass concentration) and mol/L (molarity).",
+                  "Dilution lowers concentration by adding solvent while keeping solute amount constant.",
+                ],
+                vocabulary: ["solute", "solvent", "solution", "concentration", "dilution"],
+                practice: [
+                  {
+                    question: "Calculate concentration in g/L: 5.0 g salt in 250 mL solution.",
+                    answer: "5.0 g / 0.250 L = 20 g/L.",
+                  },
+                  {
+                    question: "If you double the volume of a solution by adding water, what happens to concentration?",
+                    answer: "It halves (assuming solute amount stays the same).",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Lab: dilution series",
+                    purpose: "Create a set of solutions with different concentrations and compare.",
+                    materials: ["Food colouring", "Water", "Graduated cylinder", "Cups"],
+                    safety: ["Clean spills to avoid staining.", "Do not ingest lab liquids."],
+                    procedure: [
+                      "Make a strong coloured solution (stock).",
+                      "Prepare 1:2, 1:4, 1:8 dilutions by measuring volumes.",
+                      "Compare colour intensity and relate it to concentration.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "Why does the colour become lighter with dilution?",
+                        answer:
+                          "Fewer dye particles per unit volume, so less light is absorbed.",
+                      },
+                    ],
+                  },
+                ],
               },
+
               solubility: {
                 title: "Solubility",
                 subtitle: "Saturated vs unsaturated solutions.",
+                notes: [
+                  "Solubility is the maximum amount of solute that dissolves at a given temperature.",
+                  "Unsaturated: can dissolve more; saturated: at max; supersaturated: more than max (unstable).",
+                  "Temperature often increases solubility of solids but decreases solubility of gases.",
+                ],
+                vocabulary: ["solubility", "saturated", "unsaturated", "supersaturated"],
+                practice: [
+                  {
+                    question: "What does it mean for a solution to be saturated?",
+                    answer:
+                      "It contains the maximum dissolved solute possible at that temperature; extra solute won’t dissolve.",
+                  },
+                  {
+                    question: "Why do warm soda drinks go flat faster?",
+                    answer:
+                      "Gas solubility decreases with temperature, so CO₂ escapes more easily.",
+                  },
+                ],
               },
+
               acidsBases: {
                 title: "Acids & bases (intro)",
                 subtitle: "pH and neutralization.",
+                notes: [
+                  "pH is a measure related to hydrogen ion concentration (lower pH = more acidic).",
+                  "Acids and bases react in neutralization to form water and a salt.",
+                  "Indicators help estimate pH; pH scale is logarithmic.",
+                ],
+                vocabulary: ["pH", "indicator", "neutralization", "salt"],
+                practice: [
+                  {
+                    question: "If one solution is pH 2 and another is pH 4, which is more acidic and by how much?",
+                    answer: "pH 2 is 100× more acidic (10^(4−2)).",
+                  },
+                  {
+                    question: "Write the word equation for neutralization.",
+                    answer: "acid + base → salt + water",
+                  },
+                ],
               },
             },
           },
@@ -1004,7 +1390,7 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
 
       physics: {
         title: "Grade 11 Physics",
-        subtitle: "Motion, forces, energy, waves, and electricity.",
+        subtitle: "Motion and waves (expanded notes, practice, and labs).",
         units: {
           kinematics: {
             title: "Kinematics",
@@ -1013,13 +1399,69 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
               vectors: {
                 title: "Scalars and vectors",
                 subtitle: "Direction matters.",
+                notes: [
+                  "Scalars have magnitude only (time, mass, speed).",
+                  "Vectors have magnitude and direction (displacement, velocity, acceleration, force).",
+                  "Vector addition can be done graphically (head-to-tail) or using components.",
+                ],
+                vocabulary: ["scalar", "vector", "component", "resultant"],
+                practice: [
+                  {
+                    question: "Is velocity a scalar or vector? Explain.",
+                    answer: "Vector, because it includes direction (displacement per time).",
+                  },
+                  {
+                    question: "Add 3 m east and 4 m north. What is the magnitude of the resultant?",
+                    answer: "5 m (Pythagorean theorem).",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Lab: vector addition (force table or scaled drawings)",
+                    purpose: "Determine a resultant vector using graphical methods.",
+                    materials: ["Graph paper", "Ruler", "Protractor"],
+                    safety: ["No special safety requirements."],
+                    procedure: [
+                      "Choose two or three vectors with given magnitudes/directions.",
+                      "Draw to scale head-to-tail.",
+                      "Measure the resultant magnitude and direction.",
+                      "Compare to component method if taught.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "Why does changing the scale affect your result?",
+                        answer:
+                          "A poor scale makes measurement error larger; better scaling improves precision.",
+                      },
+                    ],
+                  },
+                ],
               },
+
               graphs: {
                 title: "Motion graphs",
                 subtitle: "Interpreting graphs.",
+                notes: [
+                  "Slope of position-time = velocity.",
+                  "Slope of velocity-time = acceleration.",
+                  "Area under velocity-time = displacement.",
+                  "Graphs help connect qualitative motion descriptions to quantitative analysis.",
+                ],
+                vocabulary: ["slope", "area", "position-time", "velocity-time"],
+                practice: [
+                  {
+                    question: "What does the slope of a velocity-time graph represent?",
+                    answer: "Acceleration.",
+                  },
+                  {
+                    question: "What does a flat line on a velocity-time graph mean?",
+                    answer: "Constant velocity (zero acceleration).",
+                  },
+                ],
               },
             },
           },
+
           waves: {
             title: "Waves",
             subtitle: "Wave properties and sound.",
@@ -1027,10 +1469,63 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
               properties: {
                 title: "Wave properties",
                 subtitle: "Frequency, wavelength, amplitude.",
+                notes: [
+                  "Wavelength (λ): distance between repeating points.",
+                  "Frequency (f): cycles per second (Hz). Period (T) = 1/f.",
+                  "Wave speed: v = fλ.",
+                  "Amplitude relates to energy/intensity.",
+                ],
+                vocabulary: ["wavelength", "frequency", "period", "amplitude", "wave speed"],
+                practice: [
+                  {
+                    question: "A wave has f = 5.0 Hz and λ = 2.0 m. Find speed.",
+                    answer: "v = fλ = 5.0 × 2.0 = 10 m/s.",
+                  },
+                  {
+                    question: "How are frequency and period related?",
+                    answer: "They are inverses: T = 1/f.",
+                  },
+                ],
               },
+
               sound: {
                 title: "Sound",
                 subtitle: "How sound travels.",
+                notes: [
+                  "Sound is a longitudinal wave that requires a medium (solid, liquid, or gas).",
+                  "Pitch relates to frequency; loudness relates to amplitude/intensity.",
+                  "Sound travels faster in solids than gases because particles are closer together.",
+                ],
+                vocabulary: ["longitudinal wave", "medium", "frequency", "amplitude", "pitch"],
+                practice: [
+                  {
+                    question: "Why can’t sound travel through a vacuum?",
+                    answer: "There are no particles to vibrate and transfer the wave.",
+                  },
+                  {
+                    question: "What happens to pitch if frequency increases?",
+                    answer: "Pitch increases.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Lab: resonance with tuning forks (or straw instruments)",
+                    purpose: "Explore how length and frequency relate to pitch.",
+                    materials: ["Straws (or tuning forks)", "Scissors", "Ruler"],
+                    safety: ["Use scissors carefully.", "Do not put small pieces in mouth."],
+                    procedure: [
+                      "Make 3 straw instruments with different lengths.",
+                      "Blow across the top to produce sound.",
+                      "Compare pitch as length changes.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "How does tube length affect pitch?",
+                        answer: "Shorter length produces higher pitch (higher frequency).",
+                      },
+                    ],
+                  },
+                ],
               },
             },
           },
@@ -1039,19 +1534,72 @@ export const SCIENCE_CONTENT: Record<string, ScienceGrade> = {
 
       "earth-space": {
         title: "Grade 11 Earth & Space",
-        subtitle: "Astronomy and Earth systems (overview).",
+        subtitle: "Astronomy (expanded notes, practice, and labs).",
         units: {
           astronomy: {
             title: "Astronomy",
-            subtitle: "Stars, galaxies, and scale.",
+            subtitle: "Stars and the scale of the universe.",
             lessons: {
               scale: {
                 title: "Scale of the universe",
                 subtitle: "Distances and units.",
+                notes: [
+                  "Astronomical unit (AU) is the average Earth–Sun distance.",
+                  "A light-year is the distance light travels in one year.",
+                  "Large distances require scientific notation and careful unit conversions.",
+                ],
+                vocabulary: ["astronomical unit", "light-year", "scientific notation"],
+                practice: [
+                  {
+                    question: "Why do astronomers use light-years?",
+                    answer: "Distances are enormous; light-years provide a convenient scale.",
+                  },
+                  {
+                    question: "Is a light-year a unit of time or distance?",
+                    answer: "Distance.",
+                  },
+                ],
               },
+
               stars: {
                 title: "Stars",
                 subtitle: "Formation and life cycles.",
+                notes: [
+                  "Stars form in nebulae when gravity causes gas and dust to collapse.",
+                  "Fusion in the core releases energy; hydrostatic equilibrium balances gravity and pressure.",
+                  "A star’s mass largely determines its life cycle (low-mass vs high-mass outcomes).",
+                ],
+                vocabulary: ["nebula", "fusion", "hydrostatic equilibrium", "supernova"],
+                practice: [
+                  {
+                    question: "What is a nebula?",
+                    answer: "A large cloud of gas and dust where stars can form.",
+                  },
+                  {
+                    question: "Why does mass matter for a star’s life cycle?",
+                    answer:
+                      "Higher mass leads to higher core temperature/pressure, faster fusion, shorter lifespan, and different end stages.",
+                  },
+                ],
+                labs: [
+                  {
+                    title: "Mini-lab: brightness vs distance (inverse square idea)",
+                    purpose: "Model how apparent brightness changes with distance.",
+                    materials: ["Small flashlight", "Meter stick", "Phone light meter app (optional)"],
+                    safety: ["Do not shine lights into eyes."],
+                    procedure: [
+                      "Measure light intensity (or perceived brightness) at 0.5 m, 1.0 m, and 2.0 m.",
+                      "Record results and describe the pattern.",
+                    ],
+                    analysisQuestions: [
+                      {
+                        question: "How did brightness change as distance increased?",
+                        answer:
+                          "It decreased; roughly following an inverse-square trend (doubling distance makes brightness much smaller).",
+                      },
+                    ],
+                  },
+                ],
               },
             },
           },
